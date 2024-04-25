@@ -1,0 +1,688 @@
+/*universal*/
+*{
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --primary: #DE5935;
+    --secondary:#F7CD46;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.header-content{
+    display: flex;
+    
+}
+a{
+    text-decoration: none;
+    color: black;
+    justify-content: space-between;
+
+}
+
+.header-content h1{
+    font-size: 40px;
+    font-weight: 600;
+    margin-left: 20px;
+    padding-top: 20px;
+    color: #DE5935;
+}
+
+    
+    
+
+.nav-links{
+    display: flex;
+    text-decoration: none;
+    justify-content: space-around;
+    gap: 40px;
+    padding-left: 70px;
+    padding-top: 35px;
+    
+    
+}
+.nav-links li::after{
+    content: "";
+    display: block;
+    background-color: var(--primary);
+    margin-top: 20px;
+    height:2px ;
+    /*width: 0%;*/
+   transform: scaleX(0); 
+   transition: transform 300ms;
+    
+    
+}
+
+.nav-links li:hover::after{
+    transform: scaleX(1);
+    
+
+}
+li{
+    list-style-type: none;
+    color: black;
+}
+
+.nav-links p{
+    cursor: pointer;
+}
+
+
+   
+
+.booking-content{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding-top: 5px;
+
+}
+.image img{
+    width: 100%;
+ }
+ .train-info{
+    
+    padding-bottom: 10px;
+    padding-left: 10px;
+    width: 150px;
+    height: 170px;
+    background-color:white;
+    color: #DE5935;
+    position: absolute;
+    right: 58%;
+    top: 0;
+    display: none;
+    
+ }
+ .more{
+    padding-bottom: 10px;
+    padding-left: 10px;
+    width: 165px;
+    height: 140px;
+    background-color:white;
+    color: #DE5935;
+    position: absolute;
+    right: 50%;
+    top: 0;
+    display: none;
+ }
+ .more p{
+    padding-top: 10px;
+ }
+ .more a:hover{
+    color: #F7CD46;
+ }
+ .train-info p{
+    padding-top: 10px;
+    
+ }
+ .train-info a:hover{
+    color: #F7CD46;
+ }
+.booking-content .content{
+    position: absolute;
+    color: white;
+    left: 20px;
+    top: 30px;
+    display: flex;
+}
+
+.booking-content .content a{
+    text-decoration: none;
+    color: white;
+    padding-right: 5px;
+}
+
+.booking-content .content a:hover{
+    text-decoration: underline;
+    color: var(--primary);
+}
+
+.booking-content .content p:hover{
+    text-decoration: underline;
+    color: var(--primary);
+}
+.booking-content .book-details{
+    position: absolute;
+    display: flex;
+    top: 70%;
+    left: 40px;
+
+}
+.book-details input{
+    width: 350px;
+    height: 60px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    padding-left: 10px;
+
+}
+.book-details button{
+    width: 150px;
+    height: 60px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    background-color: var(--primary);
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-left: 20px;
+
+}
+.booking-content .train-system{
+    position: absolute;
+    top: 40%;
+    right: 45%;
+    color: var(--secondary);
+}
+.train-system h3{
+    padding-left: 30px;
+}
+.merits{
+    padding-top: 20px;
+    padding-left: 25px;
+    
+}
+.merits h2{
+    padding-bottom: 40px;
+    padding-left: 10px;
+}
+.image-merits{
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+}
+.footer-content{
+    width: 100%;
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0.451);
+    padding-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 30px;
+}
+.features{
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+.footer-book{
+    display: flex;
+    flex-direction: column;
+}  
+.info{
+    display: flex;
+    flex-direction: column;
+    
+}
+.features p{
+    padding-left: 20px;
+    padding-bottom: 20px;
+
+}
+
+.footer-book p{
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+.info p{
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+.features a:hover{
+    color: var(--primary);
+}
+
+.footer-book a:hover{
+    color: var(--primary);
+}
+
+.info a:hover{
+    color: var(--primary);
+}
+.features a{
+    padding-top: 15px;
+}
+
+.footer-book a{
+    padding-top: 15px;
+}
+
+.info a{
+    padding-top: 10px;
+}
+
+footer{
+    padding-top: 20px;
+}
+.travi{
+    width: 300px;
+    
+}
+.travi p{
+    padding-top: 10px;
+    padding-left: 5px;
+}
+.fa-instagram{
+    font-size: 40px;
+    color: orangered;
+    padding-right: 50px;
+    padding-top: 20px;
+}
+.fa-facebook{
+    font-size: 40px;
+    color: blue;
+    padding-right: 50px;
+    padding-top: 20px;
+}
+.fa-linkedin{
+    font-size: 40px;
+    color: rgba(21, 21, 174, 0.729);
+    padding-top: 20px;
+    padding-right: 50px;
+}
+.container{
+    padding-top: 40px;
+    padding-left: 60px;
+    padding-bottom: 30px;
+    
+    
+}
+.content-container-nav{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 40px;
+    gap: 50px;
+
+
+}
+.content-container{
+    width: 500px;
+    height: 400px;
+    background-color: rgba(209, 206, 202, 0.641);
+    border: #DE5935 solid 2px;
+    border-radius: 10px;
+   
+
+}
+
+.content-container h3{
+    padding-left: 20px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.content-container p{
+    padding-top: 30px;
+    padding-left: 40px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.content-container input{
+    width: 350px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    padding-left: 20px;
+    margin-left: 40px;
+}
+
+.content-container button{
+    width: 100px;
+    height: 40px;
+    border: var(--primary) solid 1px;
+
+    border-radius: 10px;
+    outline: none;
+    background-color: white;
+    color:var(--primary);
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-left: 40px;
+    margin: 10px;
+    margin-top: 40px;
+    margin-left: 40px;
+
+}
+.content-container button:hover{
+    background-color: var(--primary);
+    color: white;
+    border: var(--primary) solid 1px;
+}
+.content-container-nav2{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 40px;
+    gap: 50px;
+}
+.content-container1{
+    width: 500px;
+    height: 400px;
+    background-color: rgba(209, 206, 202, 0.641);
+    border: #DE5935 solid 2px;
+    border-radius: 10px;
+}
+.content-container1 h3{
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.content-container1 p{
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.content-container1 input{
+    width: 350px;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    padding-left: 20px;
+    margin-left: 40px;
+}
+.inp-date{
+    margin-top: 30px;
+}
+
+.content-container1 button{
+    width: 100px;
+    height: 40px;
+    border: var(--primary) solid 1px;
+
+    border-radius: 10px;
+    outline: none;
+    background-color: white;
+    color:var(--primary);
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-left: 40px;
+    margin: 10px;
+    margin-top: 40px;
+    margin-left: 40px;
+
+}
+.content-container1 button:hover{
+    background-color: var(--primary);
+    color: white;
+    border: var(--primary) solid 1px;
+}
+.home-footer{
+    width: 100%;
+    height: 400px;
+    background-color: rgba(8, 7, 6, 0.974);
+
+}
+.home-footer h2 {
+   color: aliceblue;
+   padding-top: 10px;
+   padding-left: 20px;
+    
+    
+
+}
+
+.home-navbar ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    padding-right: 20px;
+    gap: 20px;
+    padding-top: 40px;
+    padding-left: 20px;
+   
+}
+.home-navbar a{
+    color: var(--primary);
+
+}
+
+.home-navbar a:hover{
+    color: var(--secondary);
+}
+.home-social{
+    padding-left: 40px;
+    padding-top: 40px;
+}
+.about{
+    width: 70%;
+    height: 550px;
+    background-color: white;
+    padding-top: 40px;
+    padding-left: 50px;
+    margin-left: 200px;
+    display: inline-block;
+}
+.about-describ{
+    padding-top: 20px;
+    padding-left: 10px;
+
+}
+.about-container{
+    padding-top: 20px;
+}
+.about-container p{
+    padding-left: 20px;
+    padding-top: 5px;
+}
+.contact{
+    width: 70%;
+    height: 650px;
+    background-color: white;
+    padding-top: 40px;
+    padding-left: 50px;
+    margin-left: 200px;
+}
+.contact h2{
+    text-align: center;
+}
+.contact-name{
+    
+    padding-top: 30px;
+    
+}
+.contact-name input{
+    width: 400px;
+    height: 40px;
+    border-color: var(--primary);
+    border-width: 3px;
+    padding-left: 20px;
+}
+.contact-name p{
+    padding-left: 20px;
+    color: var(--primary);
+    padding-top: 30px;
+}
+.email{
+    
+    padding-top: 40px;
+
+}
+.email input {
+    width: 800px;
+    height: 40px;
+    border-color: var(--primary);
+    border-width: 3px;
+    padding-left: 20px;
+}
+
+.email p{
+    padding-left: 20px;
+    color: var(--primary);
+    padding-right: 5px;
+    margin-left: 9px;
+}
+.message{
+    
+    padding-top: 40px;
+
+}
+.message input {
+    width: 800px;
+    height: 70px;
+    border-color: var(--primary);
+    border-width: 3px;
+    padding-left: 20px;
+}
+
+.message p{
+    padding-left: 20px;
+    color: var(--primary);
+    padding-right: 5px;
+    margin-left: 9px;
+}
+.subject{
+    
+    padding-top: 40px;
+
+}
+.subject input {
+    width: 800px;
+    height: 40px;
+    border-color: var(--primary);
+    border-width: 3px;
+    padding-left: 20px;
+}
+
+.subject p{
+    padding-left: 20px;
+    color: var(--primary);
+    padding-right: 5px;
+    margin-left: -6px;
+}
+.cancellation{
+    width: 70%;
+    height: 650px;
+    background-color: white;
+    padding-top: 40px;
+    padding-left: 50px;
+    margin-left: 200px;
+}
+.cancel-button button{
+    width: 200px;
+    height: 40px;
+    border: var(--primary) solid 1px;
+    font-size: 20px;
+    background-color: var(--primary);
+    color: var(--secondary);
+    
+}
+.cancel-button button:hover{
+    background-color: var(--secondary);
+    color: var(--primary);
+    border: var(--primary) solid 1px;
+}
+.cancel-button{
+    text-align: center;
+}
+.order-id{
+    padding-top: 40px;
+    padding-left: 50px;
+
+}
+.order-id input{
+    width: 300px;
+    height: 40px;
+    border-color: var(--primary);
+    border-width: 3px;
+    padding-left: 20px;
+}
+
+.order-id p{
+    padding-left: 20px;
+    color: var(--primary);
+    padding-right: 5px;
+}
+.cancel-mobile{
+    padding-top: 40px;
+    padding-left: 50px;
+
+}
+.cancel-mobile input{
+    width: 300px;
+    height: 40px;
+    border-color: var(--primary);
+    border-width: 3px;
+    padding-left: 20px;
+}
+
+.cancel-mobile p{
+    padding-left: 20px;
+    color: var(--primary);
+    padding-right: 5px;
+}
+.otp{
+    padding-top: 40px;
+    padding-left: 50px;
+
+}
+.otp input{
+    width: 300px;
+    height: 40px;
+    border-color: var(--primary);
+    border-width: 3px;
+    padding-left: 20px;
+}
+
+.otp p{
+    padding-left: 20px;
+    color: var(--primary);
+    padding-right: 5px;
+}
+.cancellation{
+    text-align: center;
+    
+}
+.track-button button{
+    width: 400px;
+    height: 40px;
+    border: var(--primary) solid 1px;
+    font-size: 20px;
+    background-color: rgba(0, 0, 255, 0.8);
+    color: white;
+    margin-left: 30px;
+}
+
+.track-button button:hover{
+    background-color: white;
+    color: blue;
+    border: var(--primary) solid 1px;
+}
+.track-button{
+    padding-top: 40px;
+}
+.track-refund{
+    text-align: center;
+    width: 70%;
+    height: 650px;
+    background-color: white;
+    padding-top: 40px;
+    padding-left: 50px;
+    margin-left: 200px;
+    display: none;
+    
+}
+
+    

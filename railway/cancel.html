@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRAVITRAIN</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body style="background-color: rgba(245, 245, 245, 0.956)">
+    <header>
+        <div class="header-content">
+            <h1>TRAVITRAIN</h1>
+            <nav class="nav-links">
+                <li><a href="index.html">Train tickets</a></li>
+                <div class="train-inform">
+                    <li>
+                        <p>Train Information </p>
+                    </li>
+                </div>
+                <div class="train-more">
+                    <li>
+                        <p>More</p>
+                    </li>
+                </div>
+            </nav>
+
+        </div>
+    </header>
+    <div class="booking-content">
+
+        <div class="train-info">
+            <div class="xmark">
+                <p style="text-align: right;">
+                    <i class="fa-solid fa-xmark"></i>
+                </p>
+
+            </div>
+            <ul>
+                <a href="">
+                    <p>Live Train Status</p>
+                </a>
+                <a href="">
+                    <p>PNR status</p>
+                </a>
+                <a href="">
+                    <p>Time Table</p>
+                </a>
+                <a href="">
+                    <p>Train Between </p>
+                </a>
+            </ul>
+        </div>
+        <div class="more">
+            <div class="xmarrk">
+                <p style="text-align: right;">
+                    <i class="fa-solid fa-xmark"></i>
+                </p>
+
+            </div>
+            <ul>
+                <a href="about.html">
+                    <p>About us</p>
+                </a>
+                <a href="contact.html">
+                    <p>Contact us</p>
+                </a>
+                <a href="cancel.html">
+                    <p>cancellation/refund</p>
+                </a>
+            </ul>
+
+        </div>
+
+    </div>
+    <div class="cancellation">
+        <div class="cancel-button">
+            <button class="scri-button" onclick="cancel()">Cancel</button>
+            <button class="button-ref" onclick="refund()">refund track</button>
+        </div>
+        <div class="order-id">
+            <p>Order ID</p>
+            <input type="text">
+        </div>
+        <div class="cancel-mobile">
+            <p> Mobile No</p>
+            <input type="number">
+        </div>
+        <div class="otp">
+            <p>OTP Code</p>
+            <input type="number">
+        </div>
+        <div class="track-button">
+            <button>Cancel your Booking</button>
+        </div>
+    </div>
+    <div class="track-refund">
+        <div class="cancel-button">
+            <button class="scri-button" onclick="cancel()">Cancel</button>
+            <button class="button-ref" onclick="refund()">refund track</button>
+        </div>
+        <div class="order-id">
+            <p>Order ID</p>
+            <input type="text">
+        </div>
+        <div class="cancel-mobile">
+            <p> Mobile No</p>
+            <input type="number">
+        </div>
+        <div class="otp">
+            <p>OTP Code</p>
+            <input type="number">
+        </div>
+        <div class="track-button">
+            <button>Track your Refund</button>
+        </div>
+</body>
+<script src="script.js"></script>
+</html>
